@@ -9,6 +9,12 @@ const app = express();
 app.use(express.static('public'));
 
 
+// importing the models directory
+const db = require('./models')
+
+// require controllers
+const controllers = require('./controllers');
+
 ////////////////////
 //  ROUTES
 ///////////////////
@@ -18,6 +24,9 @@ app.get('/', function (req, res) {
   res.sendFile('views/index.html' , { root : __dirname});
   // res.send("Hey!Working!");
 });
+
+// get route for controllers
+app.get('/api', controllers.api.index);
 
 
 

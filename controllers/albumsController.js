@@ -26,6 +26,7 @@ const albums = [{
   releaseDate: '1996, November 5',
   genres: [ 'country', 'rock' ]
 }];
+
 // GET /api/albums
 function index(req, res) {
   // send back all albums as JSON
@@ -34,14 +35,7 @@ function index(req, res) {
 // POST /api/albums
 
 function create(req, res){
-// app.post/('/api/albums', (req, res) => {
-//   // create an album based on request body and send it back as JSON
-//  console.log('album create', req.body);
-//   const newAlbum = req.body;
-//   newAlbum._id = newBookUUID++;
-//   books.push(newBook);
-// //   res.json(newBook);
-// });
+
 }
 // GET /api/albums/:albumId
 function show(req, res) {

@@ -1,6 +1,5 @@
 //require express in our app
-const express = require('express'),
-bodyParser = require('body-parser');
+const express = require('express');
 
 
 const app = express();
@@ -27,8 +26,7 @@ app.get('/', function (req, res) {
 
 // get route for controllers
 app.get('/api', controllers.api.index);
-
-
+app.get('/api/albums', controllers.albums.index);
 
 
 
